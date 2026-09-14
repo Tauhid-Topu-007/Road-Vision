@@ -1,0 +1,193 @@
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ============================================================
+# Virtual Environments
+# ============================================================
+venv/
+env/
+ENV/
+.venv/
+.virtualenv/
+virtualenv/
+pythonenv*/
+pip-wheel-metadata/
+.python-version
+
+# ============================================================
+# Streamlit
+# ============================================================
+# Keep .streamlit/config.toml (tracked), but ignore secrets
+.streamlit/secrets.toml
+
+# ============================================================
+# Environment variables & secrets
+# ============================================================
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+kaggle.json
+.huggingface/
+hf_cache/
+
+# ============================================================
+# YOLO / Ultralytics Training Artifacts
+# ============================================================
+# These are large and can be regenerated — do NOT commit them
+runs/
+wandb/
+*.pt
+*.pth
+*.onnx
+*.torchscript
+*.tflite
+*.mlmodel
+*.engine
+*.openvino/
+*.coreml/
+*.pb
+*.h5
+*.saved_model/
+weights/
+checkpoints/
+
+# But allow best.pt if you deliberately keep it for deploy
+!best.pt
+
+# ============================================================
+# Dataset & generated YOLO data (do NOT commit large data)
+# ============================================================
+datasets/
+data/
+roadvision_pothole_outputs/
+roadvision_pothole_outputs/**
+annotated-potholes-dataset/
+annotated-images/
+splits.json
+*.zip
+*.tar
+*.tar.gz
+
+# ============================================================
+# Jupyter / Colab / Kaggle
+# ============================================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# ============================================================
+# Testing & Coverage
+# ============================================================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+*.cover
+*.py,cover
+.cache
+
+# ============================================================
+# Logs & Reports
+# ============================================================
+*.log
+logs/
+results.csv
+results.png
+confusion_matrix*.png
+val_batch*.jpg
+val_batch*.png
+train_batch*.jpg
+train_batch*.png
+*.csv
+!requirements.txt
+
+# ============================================================
+# OS Files
+# ============================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ============================================================
+# IDE / Editor
+# ============================================================
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ============================================================
+# Build & Distribution
+# ============================================================
+*.spec
+*.manifest
+*.pyz
+*.whl
+site/
+
+# ============================================================
+# Misc
+# ============================================================
+.cache/
+tmp/
+temp/
+*.bak
+*.orig
+*.rej
